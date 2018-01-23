@@ -12,7 +12,7 @@ class Artist
   end
 
 
-  def save
+  def self.save
     @@all << self
 
   end
@@ -22,6 +22,6 @@ class Artist
 
   def add_song
   end
-    
+
 
 end
