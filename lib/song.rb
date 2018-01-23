@@ -3,8 +3,6 @@ class Song
 
   #parse a filename to find the song name and artist name.
   # # # note - every filename is separated by " - "
-
-
   def initialize(name)
     @name = name
   end
@@ -16,6 +14,7 @@ class Song
     song = file_details[1]
     #create a new song instance using the string we gather from filename
     new_song = self.new(song)
+    new_song.artist_name = artist
     new_song
   end
 
