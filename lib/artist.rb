@@ -10,9 +10,6 @@ class Artist
     @name = name
   end
 
-  def songs
-    @songs
-  end
 
   def save
     @@all << name
