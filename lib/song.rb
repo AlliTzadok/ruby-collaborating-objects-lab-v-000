@@ -1,5 +1,5 @@
 class Song
-  attr_accessor :name
+  attr_accessor :name, :artist
 
   #parse a filename to find the song name and artist name.
   # # # note - every filename is separated by " - "
