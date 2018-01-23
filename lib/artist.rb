@@ -1,5 +1,7 @@
 class Artist
 
+  attr_accessor :name
+
   @@all = []
 
   #the library should be made up of music with artists that are unique
