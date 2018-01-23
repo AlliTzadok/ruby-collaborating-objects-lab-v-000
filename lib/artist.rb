@@ -11,7 +11,7 @@ class Artist
     @songs = []
   end
 
-#keep track & view list of artists
+#keep track & be able to view list of artists
   def self.all
     @@all
   end
