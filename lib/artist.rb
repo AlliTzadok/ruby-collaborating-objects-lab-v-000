@@ -32,21 +32,18 @@ class Artist
     #return will be the instance of an artist with the name attribute filled out.
       artist
     end
-
-
-
-
-
-
   end
-
-
 
 #tell the artist about their songs.
 #store the passed argument into the @songs array
 # # # to be stored with the other songs by that artist
   def add_song(song)  # this is an instance class
     @songs << song
+  end
+
+  def print_songs
+    @songs
+    
   end
 
 
