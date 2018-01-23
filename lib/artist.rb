@@ -22,7 +22,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    self.include(name) ? self.name : self.create(name)
+    self.include(name) ? self.name : self.new(name)
 
   end
 
