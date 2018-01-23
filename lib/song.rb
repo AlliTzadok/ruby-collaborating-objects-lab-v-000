@@ -9,7 +9,7 @@ class Song
     @name = name
   end
 
-  
+
   def self.new_by_filename(filename)
     file_details = filename.split(" - ")
     artist = file_details[0]
@@ -25,8 +25,10 @@ class Song
   #this method should takes in the name and gets the artist object
   def artist_name=(name)
     self.artist = Artist.find_or_create_by_name(name)
-    artist.add_song
-
   #return the new song instance
+    artist.add_song(self)
+  end
+
+
 
 end
