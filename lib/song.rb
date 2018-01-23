@@ -4,8 +4,13 @@ class Song
   # # # note - every filename is separated by " - "
 
 
-  #create a new song instance using the string we gather from filename
+  def initialize(name)
+    @name = name
+  end
+    
 
+  end
+  #create a new song instance using the string we gather from filename
 
   #associate the new song with an artist.
   # # # note - use helper method: artist_name=(artist_name)
