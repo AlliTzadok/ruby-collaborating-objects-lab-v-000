@@ -8,6 +8,7 @@ class Artist
   # # # this is probably done on the artist class.
   def initialize(name)
     @name = name
+    @songs = []
   end
 
 
