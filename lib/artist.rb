@@ -22,11 +22,30 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    self.include(name) ? self.name : self.new(name)
+    #find the artist instance that has the name, if it exists.
+    if self.all.find {|artist| artist.name == name}
+      self.all.find {|artist| artist.name == name}
+    #it it doesn't exist, create one.
+    else
+      artist = Artist.new(name)
+      artist.save
+    #return will be the instance of an artist with the name attribute filled out.
+      artist
+    end
+
+
+
+
+
 
   end
 
-  def add_song(song)
+
+
+#tell the artist about their songs.
+#store the passed argument into the @songs array
+# # # to be stored with the other songs by that artist
+  def add_song(song)  # this is an instance class
     @songs << song
   end
 
