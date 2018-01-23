@@ -11,14 +11,14 @@ class Artist
     @songs = []
   end
 
+#keep track & view list of artists
   def self.all
     @@all
   end
 
-
+#save artist name to all the artists @@all
   def save
     @@all << self
-
   end
 
   def self.find_or_create_by_name(name)
@@ -43,8 +43,6 @@ class Artist
 
   def print_songs
     @songs.each {|song| puts song.name}
-
   end
-
 
 end
